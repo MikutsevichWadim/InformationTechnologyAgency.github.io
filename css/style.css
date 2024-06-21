@@ -2,7 +2,6 @@
 @import url('./colors.css');
 @import url('./reset.css');
 @import url('./back-to-top.css');
-@import url('./popups.css');
 
 /* debug */
 @import url('./tools.css');
@@ -291,7 +290,7 @@ section {
 /* section banner */
 
 section.banner {
-    background-image: url('img/banner.png');
+    background-image: url('../img/banner.png');
     background-repeat: no-repeat;
     background-position: center;
 }
