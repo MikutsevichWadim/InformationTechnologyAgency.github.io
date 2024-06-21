@@ -1,11 +1,11 @@
-@import url('css/fonts.css');
-@import url('css/colors.css');
-@import url('css/reset.css');
-@import url('css/back-to-top.css');
-@import url('css/popups.css');
+@import url('fonts.css');
+@import url('colors.css');
+@import url('reset.css');
+@import url('back-to-top.css');
+@import url('popups.css');
 
 /* debug */
-@import url('css/tools.css');
+@import url('tools.css');
 
 /* page */
 
@@ -291,7 +291,7 @@ section {
 /* section banner */
 
 section.banner {
-    background-image: url('/img/banner.png');
+    background-image: url('img/banner.png');
     background-repeat: no-repeat;
     background-position: center;
 }
