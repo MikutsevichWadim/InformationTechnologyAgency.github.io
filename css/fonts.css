@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* from Figma */
+
+body {
+    font-family: 'Inter Tight';
+    font-size: clamp(14px, 4vw, 20px);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(32px, 8vw, 100px);
+    font-weight: 500;
+}
+
+@media (max-width: 834px) {
+    footer .links {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+h2 {
+    font-size: clamp(20px, 6vw, 50px);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(16px, 5vw, 35px);
+    font-weight: 600;
+}
+
+.subtitle-caps {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.font-menu {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: clamp(18px, 5vw, 30px);
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.font-large {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.font-large-bold {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.font-email {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.font-quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+th {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer {
+    font-size: 16px;
+    font-weight: 130;
+}
+
+/* additional */
+
+h1 {
+    line-height: 100%;
+}
+
+.font-caps {
+    text-transform: uppercase;
+}
