@@ -442,6 +442,10 @@ section.services {
     background: linear-gradient(90deg, var(--cl-white), var(--cl-lb-in-pic));
 }
 
+section.services img {
+    opacity: 50%;
+}
+
 .affiliate-program {
     flex-direction: column;
     gap: 50px;
