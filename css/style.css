@@ -8,6 +8,10 @@
 
 /* page */
 
+* {
+    transition: all 0.5s;
+}
+
 :root {
     --page-width: (109px * 12 + 20px * 11);
 }
@@ -109,6 +113,8 @@ button.enhanced {
 
     padding: 15px 50px;
     transition-duration: 0.2s;
+
+
 }
 
 @media (min-width: 320px) {
@@ -143,6 +149,7 @@ button.enhanced:hover {
     color: var(--cl-white);
     cursor: pointer;
     opacity: 1;
+    transform: translateY(-10%);
 }
 
 button
@@ -344,6 +351,11 @@ section.company-info {
 
 section.company-info img {
     max-width: 100%;
+    transition-duration: 0.5s;
+}
+
+section.company-info img:hover {
+    filter: hue-rotate(90deg);
 }
 
 .img-heading {
@@ -418,15 +430,16 @@ section.company-info img {
 }
 
 section.soft-for-prod {
-    background-color: rgba(241, 242, 251, 1);
+    background: linear-gradient(270deg, rgb(125, 255, 244), var(--cl-white));
 }
 
 section.soft-for-construct {
     background-color: var(--cl-turquoise-pale);
+    background: linear-gradient(90deg, rgb(125, 255, 179), var(--cl-white));
 }
 
 section.services {
-    background-color: var(--cl-lilac-pale);
+    background: linear-gradient(90deg, var(--cl-white), var(--cl-lb-in-pic));
 }
 
 .affiliate-program {
@@ -443,16 +456,24 @@ section.services {
     height: 182px;
 }
 
+.affiliate-program .block:hover {
+    transform: rotateX(30deg) rotateY(3deg);
+}
+
 .affiliate-program .block.blue {
     background-color: var(--cl-blue-medium);
     margin-bottom: 10px;
     padding: 30px 25px;
+    
+    box-shadow: 5px 5px 50px var(--cl-blue-medium);
 }
 
 .affiliate-program .block.light-blue {
     background-color: var(--cl-lb-in-pic);
     color: var(--cl-black-2);
     height: 220px;
+    
+    box-shadow: 5px 5px 50px var(--cl-lb-in-pic);
 }
 
 .affiliate-program .grid-benefits {
@@ -561,7 +582,7 @@ section.import-substitution {
 
 .import-substitution .big-block {
     display: flex;
-
+    
     background-color: var(--cl-bluish);
     border-radius: 20px;
     padding: 30px;
