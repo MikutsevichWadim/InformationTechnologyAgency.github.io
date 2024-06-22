@@ -724,3 +724,31 @@ section.import-substitution {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
+.shrink {
+    transform: scale(0.8);
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.с-tooltip {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.callback-button:hover .с-tooltip {
+    visibility: visible;
+}
